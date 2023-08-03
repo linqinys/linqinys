@@ -1,16 +1,23 @@
 ### Hi there 👋
 
-<!--
-**linqinys/linqinys** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```
 
-Here are some ideas to get you started:
+_removeMagnifyingGlass(evt) {
+    
+    const element = evt.detail.element;
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    const magnifyCanvas = element.querySelector('.magnifyTool');
+    if (magnifyCanvas) {
+      console.warn('mouseUpCallback, ', evt.type)
+    // Re-enable the mouse cursor
+    setToolCursor(this.element, this.svgCursor);
+
+    element.querySelector('.magnifyTool').style.display = 'none';
+      this._removeZoomElement();
+      
+    }
+    
+  }
+
+
+```
