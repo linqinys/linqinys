@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-```
+```javascript
 
 _removeMagnifyingGlass(evt) {
     
